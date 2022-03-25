@@ -1,0 +1,79 @@
+﻿@model MovieRegistration.Models.MovieViewModel
+
+    <p><h1>Movie Registration Form</h1></p>
+
+<form asp-controller="Home" asp-action="Result">
+
+    <ul class="flex-outer">
+        <li class="form-row">
+            <label asp-for="ID"><strong>ID :</strong></label>
+            <input asp-for="ID" />
+        </li>
+        <li class="form-row">
+            <label asp-for="Title"><strong>Title :</strong></label>
+            <input asp-for="Title" />
+        </li>
+        <li class="form-row">
+            <label asp-for="Genre"><strong>Genre :</strong></label>
+            <input asp-for="Genre" />
+        </li>
+        <li class="form-row">
+            <label asp-for="Year"><strong>Year :</strong></label>
+            <input asp-for="Year" />
+        </li>
+        <li class="form-row">
+            <label asp-for="Actors"><strong>Actors :</strong></label>
+            <input asp-for="Actors" />
+        </li>
+        <li class="form-row">
+            <label asp-for="Directors"><strong>Directors :</strong></label>
+            <input asp-for="Directors" />
+        </li>
+        <li class="submit-button">
+            <button type="submit">Submit</button>
+        </li>
+
+    </ul>
+
+</form>
+
+<style>
+    h1 {
+        display: flex;
+        justify-content: center
+    }
+
+    .flex-outer {
+        background-color: whitesmoke;
+        list-style-type: none;
+        padding: 1em;
+        border-radius: 3px;
+        outline-style: solid;
+        position: relative;
+        font-size: 150%;
+    }
+
+    .form-row {
+        display: flex;
+        justify-content: flex-end;
+        padding: .5em;
+    }
+
+        .form-row > label {
+            padding: .5em 1em .5em 0;
+            flex: 1;
+        }
+
+        .form-row > input {
+            flex: 2;
+            padding: .5em;
+        }
+
+    .submit-button {
+        display: flex;
+        justify-content: center;
+        background: whitesmoke;
+        color: white;
+        padding: .5em;
+    }
+</style>
