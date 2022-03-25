@@ -1,8 +1,9 @@
 ﻿@model MovieRegistration.Models.MovieViewModel
 
+
     <p><h1>Movie Registration Form</h1></p>
 
-<form asp-controller="Home" asp-action="Result">
+<form asp-controller="Home" asp-action="Result" method="post">
 
     <ul class="flex-outer">
         <li class="form-row">
@@ -10,12 +11,27 @@
             <input asp-for="ID" />
         </li>
         <li class="form-row">
+
             <label asp-for="Title"><strong>Title :</strong></label>
             <input asp-for="Title" />
         </li>
         <li class="form-row">
             <label asp-for="Genre"><strong>Genre :</strong></label>
-            <input asp-for="Genre" />
+            <div class="dropdown">@Html.DropDownList("Genre", new List<SelectListItem>
+            {
+                new SelectListItem{ Text="Select", Value = "1"},
+                new SelectListItem{ Text="Action", Value = "2"},
+                new SelectListItem{ Text="Adventure", Value = "3"},
+                new SelectListItem{ Text="Animated", Value = "4"},
+                new SelectListItem{ Text="Comedy", Value = "5"},
+                new SelectListItem{ Text="Drama", Value = "6"},
+                new SelectListItem{ Text="Fantasy", Value = "7"},
+                new SelectListItem{ Text="Horro", Value = "8"},
+                new SelectListItem{ Text="SciFi", Value = "9"},
+                new SelectListItem{ Text="Thriller", Value = "10"},
+                new SelectListItem{ Text="Western", Value = "11"},
+            })
+             </div>
         </li>
         <li class="form-row">
             <label asp-for="Year"><strong>Year :</strong></label>
@@ -30,7 +46,7 @@
             <input asp-for="Directors" />
         </li>
         <li class="submit-button">
-            <button type="submit">Submit</button>
+            <button type="submit">Register Movie</button>
         </li>
 
     </ul>
@@ -68,6 +84,12 @@
             flex: 2;
             padding: .5em;
         }
+
+    .dropdown {
+        flex: 2;
+        padding: .5em 1em .5em 0;
+        width: 500px;
+    }
 
     .submit-button {
         display: flex;

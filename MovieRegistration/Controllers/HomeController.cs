@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace MovieRegistration.Controllers
 {
     public class HomeController : Controller
@@ -27,7 +28,7 @@ namespace MovieRegistration.Controllers
         {
             return View();
         }
-        
+
         public IActionResult Result(MovieViewModel movieViewModel)
         {
             var resultViewModel = new ResultViewModel();
