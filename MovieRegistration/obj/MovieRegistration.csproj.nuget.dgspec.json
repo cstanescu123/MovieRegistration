@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cstanescu\\source\\repos\\Movie\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj": {}
+    "C:\\Users\\corne\\Desktop\\MVC\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cstanescu\\source\\repos\\Movie\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj": {
+    "C:\\Users\\corne\\Desktop\\MVC\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cstanescu\\source\\repos\\Movie\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj",
+        "projectUniqueName": "C:\\Users\\corne\\Desktop\\MVC\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj",
         "projectName": "MovieRegistration",
-        "projectPath": "C:\\Users\\cstanescu\\source\\repos\\Movie\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj",
-        "packagesPath": "C:\\Users\\cstanescu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cstanescu\\source\\repos\\Movie\\MovieRegistration\\MovieRegistration\\obj\\",
+        "projectPath": "C:\\Users\\corne\\Desktop\\MVC\\MovieRegistration\\MovieRegistration\\MovieRegistration.csproj",
+        "packagesPath": "C:\\Users\\corne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\corne\\Desktop\\MVC\\MovieRegistration\\MovieRegistration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cstanescu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\corne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.14, 5.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -69,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

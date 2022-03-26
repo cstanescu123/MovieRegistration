@@ -11,6 +11,8 @@ namespace MovieRegistration.Models
     public class MovieViewModel
     {
         public int ID { get; set; }
+
+        [StringLength(50, ErrorMessage = "Max 50 characters")]
         public string Title { get; set; }
         public string Genre { get; set; }
         public int Year { get; set; }
