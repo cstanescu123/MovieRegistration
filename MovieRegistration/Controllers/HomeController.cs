@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
+
 namespace MovieRegistration.Controllers
 {
     public class HomeController : Controller
@@ -28,7 +29,22 @@ namespace MovieRegistration.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public ActionResult Create()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult Create(MovieViewModel movie)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
+
+            return View(movie);
+        }
         public IActionResult Result(MovieViewModel movieViewModel)
         {
             var resultViewModel = new ResultViewModel();
