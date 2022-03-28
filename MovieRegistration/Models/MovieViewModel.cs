@@ -12,9 +12,14 @@ namespace MovieRegistration.Models
     {
         public int ID { get; set; }
 
-        [StringLength(50, ErrorMessage = "Max 50 characters")]
+        [StringLength(50, MinimumLength = 1, ErrorMessage = "Title can only be 50 characters max")]
+        [Required(ErrorMessage = "Title is required")]
         public string Title { get; set; }
+        [Required(ErrorMessage = "Genre must be specified")]
         public string Genre { get; set; }
+
+        [Range(1880, 2022, ErrorMessage = "Year must be between 1880 and the current year")]
+        [Required(ErrorMessage = "Year must be entered")]
         public int Year { get; set; }
         public string Actors { get; set; }
         public string Directors { get; set; }
